@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WallPix - معرض الخلفيات الرقمية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div id="root">
+      <header class="p-6 bg-gray-800 shadow-md text-center border-b border-gray-700">
+        <h1 class="text-3xl font-bold tracking-wide text-indigo-400">WallPix Gallery</h1>
+        <p class="text-gray-400 mt-2">مستودعك الهندسي المتكامل لعرض الخلفيات والصور الرقمية</p>
+      </header>
+
+      <main class="p-8 max-w-7xl mx-auto">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg max-w-md mx-auto mb-10 border border-gray-700">
+          <h2 class="text-xl font-semibold mb-4 text-center">رفع خلفية جديدة للمعرض</h2>
+          <div class="space-y-4">
+            <input type="text" id="title" placeholder="عنوان الصورة أو الخلفية" class="w-full p-3 bg-gray-700 rounded-lg text-white border border-gray-600 focus:outline-none focus:border-indigo-500" />
+            <input type="text" id="category" placeholder="التصنيف (مثال: فضاء، هندسة)" class="w-full p-3 bg-gray-700 rounded-lg text-white border border-gray-600 focus:outline-none focus:border-indigo-500" />
+            <input type="file" id="imageFile" class="w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 cursor-pointer" />
+            <button onclick="alert('جاري إعداد اتصال قاعدة البيانات المستقلة لحفظ الصورة!')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold p-3 rounded-lg transition-colors">رفع الآن</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery">
+          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-56 bg-gradient-to-br from-purple-900 to-indigo-900 flex items-center justify-center text-center p-4">
+              <span class="text-indigo-200 font-medium">Deep Cosmos Wallpaper <br>🚀 قريباً</span>
+            </div>
+            <div class="p-4 border-t border-gray-700">
+              <h3 class="font-semibold text-lg truncate">مساحة الكون العميق</h3>
+              <span class="inline-block bg-indigo-900 text-indigo-300 text-xs px-2 py-1 rounded mt-2 font-mono">Cosmos</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
